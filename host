@@ -1,15 +1,32 @@
 # Telegram (AS62041, актуально на 2026)
-149.154.167.50 telegram.org
+91.108.4.1 telegram.org
 149.154.167.99 t.me
-149.154.167.91 api.telegram.org
-149.154.167.99 web.telegram.org
-149.154.167.99 telegram-cdn.org
+91.108.56.130 web.telegram.org
+149.154.167.220 api.telegram.org
+91.108.56.130 telegram-cdn.org
+91.105.192.100 venus.web.telegram.org
+149.154.167.99 flora.web.telegram.org
+149.154.167.99 telegra.ph
+149.154.167.99 telegram.me
+91.108.4.1 telesco.pe
+91.108.56.7 tg.dev
+149.154.160.1 desktop.telegram.org
+91.108.8.1 core.telegram.org
+91.108.56.130 pluto.web.telegram.org
+91.108.56.130 mars.web.telegram.org
 # Дополните по логам: 149.154.160.0/20 диапазон
 
 # WhatsApp (Meta, актуально на 2026)
-157.240.241.60 whatsapp.com
-157.240.3.60 whatsapp.net
-157.240.241.60 wa.me
-157.240.241.60 web.whatsapp.com
-157.240.7.35 g.whatsapp.net
+157.240.241.35 whatsapp.com
+31.13.64.36 whatsapp.net
+157.240.24.14 wa.me
+31.13.64.36 g.whatsapp.net
+157.240.241.35 web.whatsapp.com
+31.13.86.8 graph.whatsapp.net
+31.13.64.49 mmg.whatsapp.net
+31.13.64.39 pps.whatsapp.net
+102.132.96.217 media-mia1-1.cdn.whatsapp.net
+102.132.96.217 media-sjc1-1.cdn.whatsapp.net
+31.13.64.36 static.whatsapp.net
+102.132.96.217 attach-mia3-1.cdn.whatsapp.net
 
