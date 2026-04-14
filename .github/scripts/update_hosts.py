@@ -62,6 +62,15 @@ if HOSTS_FILE.exists():
         content += '\n' + whatsapp_section
 else:
     content = telegram_section + whatsapp_section
-
-HOSTS_FILE.write_text(content, encoding='utf-8')
-print("Hosts file updated successfully!")
+   
+   # Нормализация формата
+   content = re.sub(r'\r\n?', '\n', content)  # Только LF
+   content = content.encode('utf-8').lstrip(b'\xef\xbb\xbf').decode('utf-8')  # No BOM
+   
+   HOSTS_FILE.write_text(content, encoding='utf-8', newline='\n')
+   print("Hosts file updated successfully!")
+   
+   # Диагностика
+   print("Размер файла:", len(content), "символов")
+   print("Последние строки:")
+   print('\n'.join(content.splitlines()[-5:]))
