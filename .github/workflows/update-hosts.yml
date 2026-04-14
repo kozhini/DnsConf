@@ -35,13 +35,26 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        
+        # Диагностика изменений
+        echo "=== Проверка изменений ==="
+        git status
+        git diff host
+        
+        # Принудительно добавить (игнорируя whitespace)
+        git add --renormalize host
         git add host
+        
+        # Проверка staged изменений
         if git diff --staged --quiet; then
-          echo "No changes to commit"
+          echo "❌ Нет изменений для коммита"
+          exit 0
         else
-          git commit -m "Auto-update Telegram & WhatsApp hosts ($(date +'%Y-%m-%d'))"
-          git push
+          echo "✅ Изменения найдены!"
         fi
+        
+        git commit -m "Auto-update Telegram & WhatsApp hosts ($(date +'%Y-%m-%d'))"
+        git push
     
     - name: Create Pull Request (if needed)
       uses: peter-evans/create-pull-request@v6
