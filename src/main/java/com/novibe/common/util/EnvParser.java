@@ -1,6 +1,6 @@
 package com.novibe.common.util;
 
-import com.novibe.common.base_dto.DnsProfile;
+import com.novibe.common.base_structures.DnsProfile;
 import com.novibe.common.config.EnvironmentVariables;
 
 import java.util.ArrayList;

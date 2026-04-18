@@ -2,7 +2,7 @@ package com.novibe;
 
 
 import com.novibe.common.DnsTaskRunner;
-import com.novibe.common.base_dto.DnsProfile;
+import com.novibe.common.base_structures.DnsProfile;
 import com.novibe.common.exception.ProcessException;
 import com.novibe.common.util.EnvParser;
 import com.novibe.common.util.Log;

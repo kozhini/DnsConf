@@ -33,7 +33,8 @@ public class CloudflareTaskRunner extends DnsTaskRunner {
         Log.global("Setting up Profile " + dnsProfile.number() + " (CLOUDFLARE)");
         Log.common("""
                 Script behaviour: previously generated data is always about to be removed.
-                If you want to clear Cloudflare BLOCK/REDIRECT settings, launch this script without providing sources to related environment variables.
+                - if you want to clear Cloudflare BLOCK/REDIRECT settings, launch this script without providing sources to related environment variables.
+                - each line is mapped to an IP–domain pair; lines that cannot be parsed are skipped.
                 """);
     }
 

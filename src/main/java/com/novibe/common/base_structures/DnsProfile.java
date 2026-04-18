@@ -1,4 +1,4 @@
-package com.novibe.common.base_dto;
+package com.novibe.common.base_structures;
 
 import lombok.Builder;
 

@@ -1,8 +1,8 @@
 package com.novibe.common;
 
 import com.google.gson.Gson;
-import com.novibe.common.base_dto.DnsProfile;
-import com.novibe.common.base_dto.Jsonable;
+import com.novibe.common.base_structures.DnsProfile;
+import com.novibe.common.base_structures.Jsonable;
 import com.novibe.common.exception.DnsHttpError;
 import com.novibe.common.util.Log;
 import lombok.Setter;

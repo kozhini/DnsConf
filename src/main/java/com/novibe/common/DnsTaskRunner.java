@@ -1,6 +1,6 @@
 package com.novibe.common;
 
-import com.novibe.common.base_dto.DnsProfile;
+import com.novibe.common.base_structures.DnsProfile;
 import com.novibe.common.data_sources.HostsBlockListsLoader;
 import com.novibe.common.data_sources.HostsOverrideListsLoader;
 import lombok.Setter;
